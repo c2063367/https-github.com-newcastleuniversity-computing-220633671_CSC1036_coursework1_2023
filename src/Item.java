@@ -10,8 +10,6 @@ public class Item {
 
     private int year;
 
-    private String getItemType;
-
     // Getting the variables under the class file 'Item', will ensure that these variables will be able to be fetched to other classes
     public Item(int LotNumber, String ItemType, String BuyerName, double Price, int year) {
         this.LotNumber = LotNumber;
@@ -20,6 +18,18 @@ public class Item {
         this.Price = Price;
         this.year = year;
 
+    }
+    private boolean validItemType(String ItemType){
+        if(ItemType.equals("Furniture")){
+            return true;
+        }
+        if(ItemType.equals("Painting")){
+            return true;
+        }
+        if(ItemType.equals("Sculpture")) {
+            return true;
+        }
+        return false;
     }
     public int getLotNumber(){
         return LotNumber;

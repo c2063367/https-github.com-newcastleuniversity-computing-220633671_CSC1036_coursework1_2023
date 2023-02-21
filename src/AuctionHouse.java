@@ -45,6 +45,7 @@ public class AuctionHouse {
     public List<Item> getItemsAbovePrice(double Price) {
         List <Item> ItemsAbovePrice = new ArrayList<>();
         for (Item item : soldItems){
+            boolean getPrice = true;
             if (item.getPrice() > Price){
                 ItemsAbovePrice.add(item);
             }
