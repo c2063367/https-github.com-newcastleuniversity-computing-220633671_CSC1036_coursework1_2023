@@ -7,7 +7,7 @@ public class Item {
     private String BuyerName;
 
     private double Price;
-
+    private double HighestPrice;
     private int year;
 
     // Getting the variables under the class file 'Item', will ensure that these variables will be able to be fetched to other classes
@@ -59,6 +59,12 @@ public class Item {
     public void setPrice(){
         this.Price = Price;
 
+    }
+    public double getHighestPrice(){
+        return HighestPrice;
+    }
+    public void setHighestPrice(){
+        this.HighestPrice = HighestPrice;
     }
     public int getYear(){
         return year;

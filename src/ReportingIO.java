@@ -1,15 +1,19 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
+
+import static java.lang.System.exit;
+
 public class ReportingIO {
 
     private static List<AuctionHouse> auctionHouses = new ArrayList<>();
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        boolean exit = false;
+        boolean exit = true;
 
-        int choice;
-        while (!exit) {
+
+        int choice = 0;
+        while (exit) {
             System.out.println("\nPlease choose an option:");
             System.out.println("1. Enter AuctionHouse Data: ");
             System.out.println("2. Enter Item Date: ");
@@ -26,13 +30,17 @@ public class ReportingIO {
                 System.out.println("\n Enter AuctionHouse data");
                 System.out.print("Enter name: ");
                 String auctionHouseName = scan.nextLine();
-                AuctionHouse auctionHouse = new AuctionHouse(auctionHouseName, new ArrayList<>());
+                AuctionHouse auctionHouse = new AuctionHouse(auctionHouseName, scan.nextInt());
                 auctionHouses.add(auctionHouse);
                 System.out.println("AuctionHouse added");
                 break;
             case 2:
                 System.out.println("\nEnter Item data: ");
-                System.out.print("Name:");]
+                System.out.println("LotNumber: ");
+                int LotNumber = scan.nextInt();
+                System.out.println("Name of buyer");
+                String BuyerName = scan.nextLine();
+                System.out.print("Name of Item:");
                 String ItemType = scan.nextLine();
                 System.out.print("Year: ");
                 int year = scan.nextInt();
@@ -41,13 +49,12 @@ public class ReportingIO {
                 scan.nextLine();
                 System.out.print("AuctionHouse name: ");
                 String itemAuctionHouseName = scan.nextLine();
-                AuctionHouse itemAuctionHouse = getAuctionHouseByName(itemAuctionHouseName);
+                AuctionHouse itemAuctionHouse = getAuctionHouse(itemAuctionHouseName);
                 if (itemAuctionHouse == null) {
                     System.out.println("Error: AuctionHouse not found");
                     break;
                 }
-                Item item = new Item(LotNumber, BuyerName, ItemType, year, Price);
-                itemAuctionHouse.getItems().add(item);
+                Item item = new Item(LotNumber, BuyerName, ItemType, Price, year);
                 System.out.println("Item added");
                 break;
             case 3:
@@ -63,13 +70,13 @@ public class ReportingIO {
                     case 1:
                         System.out.print("\nEnter the year");
                         int Year = scan.nextInt();
-                        AuctionHouse largestAuctionHouse = getAuctionHouseWithLargestAveragePrice(year);
+                        AuctionHouse largestAuctionHouse = getAuctionHouseWithLargestAveragePrice(Year);
                         if (largestAuctionHouse == null) {
                             System.out.println("Error: no AuctionHouses found with items with specified year");
                             break;
 
                         }
-                        System.out.println("\nAuctionHouse with largest average item price for year" + year + ":");
+                        System.out.println("\nAuctionHouse with largest average item price for year" + Year + ":");
                         System.out.println(largestAuctionHouse.getBuyerName());
                         break;
                     case 2:
@@ -81,10 +88,26 @@ public class ReportingIO {
                         System.out.println("AuctionHouse: " + getAuctionHouseByItem(largestItem));
                         break;
                     case 3:
-                        ;
                         System.out.print("\n Enter the price threshold: ");
 
                 }
+                exit(0);
         }
+    }
+
+    private static AuctionHouse getAuctionHouseWithLargestAveragePrice(int year) {
+        return null;
+    }
+
+    private static String getAuctionHouseByItem(Item largestItem) {
+        return null;
+    }
+
+    private static AuctionHouse getAuctionHouse(String itemAuctionHouseName) {
+        return null;
+    }
+
+    private static Item getItemLargestPrice() {
+    return null;
     }
 }

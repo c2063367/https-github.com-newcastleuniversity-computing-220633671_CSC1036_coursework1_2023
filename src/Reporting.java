@@ -9,13 +9,13 @@ public class Reporting {
         this.auctionHouses = new ArrayList<>();
 
     }
-    public Item getItemLargestPrice(){
+    public Item getHighestPrice(){
         Item largestItem = null;
-        double largestPrice = Double.NEGATIVE_INFINITY;
+        double HighestPrice = 0.0;
         for (AuctionHouse auctionHouse : auctionHouses) {
-            for (Item item : auctionHouse.getItemsAbovePrice()){
-                if (item.getPrice() > largestPrice){
-                    largestPrice = item.getPrice();
+            for (Item item : auctionHouse.getItemsAbovePrice(getHighestPrice().getPrice())){
+                if (item.getPrice() > HighestPrice){
+                    HighestPrice = item.getPrice();
                     largestItem = item;
                 }
             }
@@ -24,11 +24,11 @@ public class Reporting {
     }
 public AuctionHouse getAuctionHouseWithLargestAveragePrice(int year){
     AuctionHouse largestAuctionHouse = null;
-    double largestAveragePrice = Double.NEGATIVE_INFINITY;
+    double largestAveragePrice = 0.0;
     for(AuctionHouse auctionHouse : auctionHouses) {
         double sum = 0;
         int count = 0;
-        for (Item item : auctionHouse.getItemsAbovePrice()) {
+        for (Item item : auctionHouse.getItemsAbovePrice(year)) {
             if (item.getYear() == year) {
                 sum += item.getPrice();
                 count++;

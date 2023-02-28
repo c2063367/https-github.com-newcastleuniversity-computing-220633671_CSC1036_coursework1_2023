@@ -5,9 +5,12 @@ public class AuctionHouse {
     private String name;
     private List<Item> soldItems;
 
-    public AuctionHouse(String name) {
+
+/* soldItems represents the number of furniture separately in a array*/
+    public AuctionHouse(String name, int soldItems) {
         this.name = name;
         this.soldItems = new ArrayList<>();
+
 
     }
 
@@ -17,14 +20,14 @@ public class AuctionHouse {
     }
 
     public Item getHighestPrice() {
-        Item highestPrice = null;
+        Item HighestPrice = null;
         for (Item item : soldItems) {
-            if (item.getPrice() > highestPrice.getPrice()) {
-                highestPrice = item;
+            if (item.getPrice() > HighestPrice.getPrice()) {
+                HighestPrice = item;
             }
 
         }
-        return highestPrice;
+        return HighestPrice;
 
     }
 
@@ -34,23 +37,33 @@ public class AuctionHouse {
         double sum = 0;
         for (Item item : soldItems) {
             if (item.getPrice() == Price) {
-                count ++;
+                count++;
                 sum += item.getPrice();
             }
 
         }
-        return sum/count;
+        return sum / count;
     }
 
     public List<Item> getItemsAbovePrice(double Price) {
-        List <Item> ItemsAbovePrice = new ArrayList<>();
-        for (Item item : soldItems){
+        List<Item> ItemsAbovePrice = new ArrayList<>();
+        for (Item item : soldItems) {
             boolean getPrice = true;
-            if (item.getPrice() > Price){
+            if (item.getPrice() > Price) {
                 ItemsAbovePrice.add(item);
             }
         }
         return ItemsAbovePrice;
     }
+
+    public String getBuyerName() {
+        return null;
+    }
+
+    public String getItems() {
+        return null;
+    }
+
+
 
 }
