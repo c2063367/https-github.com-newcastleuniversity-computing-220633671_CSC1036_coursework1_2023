@@ -5,8 +5,15 @@ public class AuctionHouse {
     private String name;
     private List<Item> soldItems;
 
+    @Override
+    public String toString() {
+        return "AuctionHouse{" +
+                "name='" + name + '\'' +
+                ", soldItems=" + soldItems +
+                '}';
+    }
 
-/* soldItems represents the number of furniture separately in a array*/
+    /* soldItems represents the number of furniture separately in a array*/
     public AuctionHouse(String name, int soldItems) {
         this.name = name;
         this.soldItems = new ArrayList<>();
