@@ -6,7 +6,7 @@ public class testing {
         Item Item4 = new Item(4, "Carpet","L",1000.00, 2020 );
         Item Item5 = new Item(5, "Lamp","Z",5.00, 2000 );
 
-        AuctionHouse a = new AuctionHouse("Callum", 5);
+        AuctionHouse a = new AuctionHouse("Callum", 5 );
         a.addSoldItem(Item1);
         a.addSoldItem(Item2);
         a.addSoldItem(Item3);
@@ -14,6 +14,6 @@ public class testing {
         a.addSoldItem(Item5);
 
 
-        System.out.print(a);
+        System.out.println(a);
     }
 }

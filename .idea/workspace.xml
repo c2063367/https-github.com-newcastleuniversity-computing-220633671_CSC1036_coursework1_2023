@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="AuctionHouse.java">
+    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="Reporting.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuctionHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReportingIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReportingIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="c2063367 &lt;e.kalirajan2@newcastle.ac.uk&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -38,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ReportingIO">
+  <component name="RunManager" selected="Application.testing">
     <configuration name="AuctionHouse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AuctionHouse" />
       <module name="AuctionHouse" />
@@ -62,8 +73,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReportingIO" />
         <item itemvalue="Application.testing" />
+        <item itemvalue="Application.ReportingIO" />
         <item itemvalue="Application.AuctionHouse" />
       </list>
     </recent_temporary>
@@ -105,12 +116,27 @@
       <option name="project" value="LOCAL" />
       <updated>1677588690625</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reporting.java">
+      <created>1677608668165</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677608668165</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Reporting.java">
+      <created>1677608687884</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677608687884</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AuctionHouse.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="AuctionHouse.java" />
+    <MESSAGE value="Reporting.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reporting.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
