@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="Reporting.java">
+    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="ReportingIO.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReportingIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReportingIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionHouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.testing">
+  <component name="RunManager" selected="Application.ReportingIO">
     <configuration name="AuctionHouse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AuctionHouse" />
       <module name="AuctionHouse" />
@@ -73,8 +73,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.testing" />
         <item itemvalue="Application.ReportingIO" />
+        <item itemvalue="Application.testing" />
         <item itemvalue="Application.AuctionHouse" />
       </list>
     </recent_temporary>
@@ -130,13 +130,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677608687884</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ReportingIO.java">
+      <created>1677673017396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677673017396</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ReportingIO.java">
+      <created>1677673026833</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677673026833</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AuctionHouse.java" />
     <MESSAGE value="Reporting.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reporting.java" />
+    <MESSAGE value="ReportingIO.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReportingIO.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

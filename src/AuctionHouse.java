@@ -7,9 +7,9 @@ public class AuctionHouse {
 
     @Override
     public String toString() {
-        return "AuctionHouse{" +
-                "name='" + name + '\'' +
-                ", soldItems=" + soldItems +
+        return "AuctionHouse {" +
+                "name = '" + name + '\'' +
+                ", soldItems = " + soldItems +
                 '}';
     }
 
