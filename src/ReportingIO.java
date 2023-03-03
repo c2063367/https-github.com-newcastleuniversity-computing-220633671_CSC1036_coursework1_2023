@@ -16,7 +16,7 @@ public class ReportingIO {
         while (exit) {
             System.out.println("\nPlease choose an option:");
             System.out.println("1. Enter AuctionHouse Data: ");
-            System.out.println("2. Enter Item Date: ");
+            System.out.println("2. Enter Item Data: ");
             System.out.println("3. Provide Reporting: ");
             System.out.println("4. Exit");
 
@@ -24,8 +24,7 @@ public class ReportingIO {
             switch (choice) {
                 case 1:
                     try {
-                        choice = scan.nextInt();
-                        System.out.println("\n Enter AuctionHouse data");
+                        System.out.println("\nEnter AuctionHouse data");
                         System.out.print("Enter name: ");
                         String auctionHouseName = scan.nextLine();
                         AuctionHouse auctionHouse = new AuctionHouse(auctionHouseName, scan.nextInt());
@@ -36,10 +35,10 @@ public class ReportingIO {
                     }
                     break;
                 case 2:
-                    System.out.println("\nEnter Item data: ");
+                    System.out.println("\nEnter Item data; ");
                     System.out.println("LotNumber: ");
                     int LotNumber = scan.nextInt();
-                    System.out.println("Name of buyer");
+                    System.out.println("Name of buyer: ");
                     String BuyerName = scan.nextLine();
                     System.out.print("Name of Item:");
                     String ItemType = scan.nextLine();
@@ -100,6 +99,8 @@ public class ReportingIO {
                     } catch (InputMismatchException e) {
                         System.out.println("Error: Invalid Input Type");
                     }
+                case 4:
+                     exit = false;
             }
         }
     }

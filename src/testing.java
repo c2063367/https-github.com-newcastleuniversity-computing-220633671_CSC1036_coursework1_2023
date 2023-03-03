@@ -12,8 +12,22 @@ public class testing {
         a.addSoldItem(Item3);
         a.addSoldItem(Item4);
         a.addSoldItem(Item5);
+        AuctionHouse b = new AuctionHouse("Building 2", 2 );
+        b.addSoldItem(Item1);
+        b.addSoldItem(Item2);
+        b.addSoldItem(Item3);
+        b.addSoldItem(Item4);
+        b.addSoldItem(Item5);
+        AuctionHouse c = new AuctionHouse("Building 3", 1 );
+        c.addSoldItem(Item1);
+        c.addSoldItem(Item2);
+        c.addSoldItem(Item3);
+        c.addSoldItem(Item4);
+        c.addSoldItem(Item5);
 
 
         System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
     }
 }
