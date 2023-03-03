@@ -36,10 +36,11 @@ public class ReportingIO {
                     break;
                 case 2:
                     System.out.println("\nEnter Item data; ");
+                    scan.nextLine();
+                    System.out.println("Name of Buyer: ");
+                    String BuyerName = scan.nextLine();
                     System.out.println("LotNumber: ");
                     int LotNumber = scan.nextInt();
-                    System.out.println("Name of buyer: ");
-                    String BuyerName = scan.nextLine();
                     System.out.print("Name of Item:");
                     String ItemType = scan.nextLine();
                     System.out.print("Year: ");
@@ -93,7 +94,7 @@ public class ReportingIO {
                                 break;
                             case 3:
                                 System.out.print("\n Enter the price threshold: ");
-
+                                scan.nextInt();
                         }
                         exit(0);
                     } catch (InputMismatchException e) {

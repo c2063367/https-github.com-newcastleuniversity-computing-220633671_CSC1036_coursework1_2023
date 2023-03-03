@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="AuctionHouse.java">
+    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="testing.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReportingIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReportingIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,14 +150,22 @@
       <option name="project" value="LOCAL" />
       <updated>1677756432655</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="testing.java">
+      <created>1677842512980</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677842512980</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Reporting.java" />
     <MESSAGE value="ReportingIO.java" />
     <MESSAGE value="AuctionHouse.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="AuctionHouse.java" />
+    <MESSAGE value="testing.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
