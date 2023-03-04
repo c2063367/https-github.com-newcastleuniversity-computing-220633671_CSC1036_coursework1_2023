@@ -10,6 +10,9 @@ import static java.lang.System.exit;
 public class ReportingIO {
 
     private static List<AuctionHouse> auctionHouses = new ArrayList<>();
+    /**
+     * EVK Kalirajan - unique value mapping for all the auction houses created for testing
+     */
     private static HashMap<String, ArrayList> auctionHouseNameMap = new HashMap<>();
 
         public static void main(String[] args) throws IOException {
