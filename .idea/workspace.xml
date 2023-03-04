@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="ReportingIO.java">
-      <change beforePath="$PROJECT_DIR$/src/AuctionHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionHouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reporting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reporting.java" afterDir="false" />
-    </list>
+    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="ReportingIO.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +22,12 @@
       <list>
         <option value="c2063367 &lt;e.kalirajan2@newcastle.ac.uk&gt;" />
       </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -200,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677959119278</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ReportingIO.java">
+      <created>1677959342847</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677959342847</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
