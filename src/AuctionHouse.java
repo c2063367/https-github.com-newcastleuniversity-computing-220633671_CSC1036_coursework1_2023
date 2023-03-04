@@ -5,6 +5,7 @@ public class AuctionHouse {
     private String name;
     private List<Item> soldItems;
 
+
     @Override
     public String toString() {
         return "AuctionHouse {" +

@@ -24,8 +24,6 @@ public class testing {
         c.addSoldItem(Item3);
         c.addSoldItem(Item4);
         c.addSoldItem(Item5);
-
-
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);

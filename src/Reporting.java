@@ -12,7 +12,7 @@ public class Reporting {
 
     /**
      * TOTO - change the method to be appropriate to reflect the actual requirement and the implementation
-     * @return
+     * @returnkkhjklh
      */
     public Item getHighestPrice(){
         Item largestItem = null;
