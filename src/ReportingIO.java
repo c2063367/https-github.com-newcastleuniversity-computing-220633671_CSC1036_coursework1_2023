@@ -10,7 +10,7 @@ import static java.lang.System.exit;
 public class ReportingIO {
 
     private static List<AuctionHouse> auctionHouses = new ArrayList<>();
-    HashMap<String, ArrayList> auctionHouseNameMap = new HashMap<>();
+    private static HashMap<String, ArrayList> auctionHouseNameMap = new HashMap<>();
 
         public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class ReportingIO {
                         System.out.print("Enter name: ");
                         String auctionHouseName = scan.nextLine();
                         if(!auctionHouseNameMap.containsKey(auctionHouseName)){
-                            auctionHouse = new AuctionHouse(auctionHouseName);
+                            AuctionHouse auctionHouse = new AuctionHouse(auctionHouseName);
                             auctionHouses.add(auctionHouse);
                         }else{
                             System.out.println(auctionHouseName +" AuctionHouse already exists");
@@ -42,7 +42,7 @@ public class ReportingIO {
                     }
                     break;
                 case 2:
-
+                    enterItemInfo(scan);
                 case 3:
                     provideReportingStatistics();
                 case 4:
@@ -82,7 +82,6 @@ public class ReportingIO {
     /** TODO
      * Name - Ezhilvijaykarthik kalirajan - CC
      * Desc- This method
-     * @param auctionHouses
      */
 
     public static void provideReportingStatistics() {
