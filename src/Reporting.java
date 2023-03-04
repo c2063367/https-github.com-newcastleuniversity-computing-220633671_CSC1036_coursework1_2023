@@ -9,6 +9,11 @@ public class Reporting {
         this.auctionHouses = new ArrayList<>();
 
     }
+
+    /**
+     * TOTO - change the method to be appropriate to reflect the actual requirement and the implementation
+     * @return
+     */
     public Item getHighestPrice(){
         Item largestItem = null;
         double HighestPrice = 0.0;
@@ -34,16 +39,22 @@ public AuctionHouse getAuctionHouseWithLargestAveragePrice(int year){
                 count++;
 
             }
-        }
+        } //KK-C2063367: for loop for all the items sold for an auction house
         double averagePrice = count > 0 ?
                 sum/count : 0;
         if (averagePrice > largestAveragePrice){
             largestAveragePrice = averagePrice;
             largestAuctionHouse = auctionHouse;
         }
-        }
+    } //KK-C2063367:for loop closing the auction houses
     return largestAuctionHouse;
     }
+
+    /**
+     * TODO- change the method name to reflect the implementation
+     * @param amount
+     * @return
+     */
     public List<Item> getItemsWithPriceGreaterThan(double amount) {
         List<Item> result = new ArrayList<>();
         for (AuctionHouse auctionHouse : auctionHouses) {

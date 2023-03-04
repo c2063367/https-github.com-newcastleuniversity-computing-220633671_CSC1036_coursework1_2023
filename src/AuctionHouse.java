@@ -13,17 +13,19 @@ public class AuctionHouse {
                 '}';
     }
 
-    /* soldItems represents the number of furniture separately in a array*/
-    public AuctionHouse(String name, int soldItems) {
+    /* soldItems represents the number of items in*/
+    public AuctionHouse(String name, Item item) {
         this.name = name;
+        this.soldItems.add(item);
+    }
+
+    public AuctionHouse(String auctionHouseName) {
+        this.name = auctionHouseName;
         this.soldItems = new ArrayList<>();
-
-
     }
 
     public void addSoldItem(Item item) {
-        soldItems.add(item);
-
+        this.soldItems.add(item);
     }
 
     public Item getHighestPrice() {
@@ -35,7 +37,6 @@ public class AuctionHouse {
 
         }
         return HighestPrice;
-
     }
 
     /* To get an average Price, we would need to add all the sold items prices up(sum), and divide them by the total number of items sold(count)*/
@@ -63,8 +64,8 @@ public class AuctionHouse {
         return ItemsAbovePrice;
     }
 
-    public String getBuyerName() {
-        return null;
+    public String getAuctionHouseName() {
+        return this.name;
     }
 
     public String getItems() {
