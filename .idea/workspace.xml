@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="ReportingIO.java" />
+    <list default="true" id="f0528879-2699-48ba-bebc-b58dabe6277d" name="Changes" comment="ReportingIO.java">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuctionHouse.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuctionHouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reporting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReportingIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuctionHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuctionHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reporting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reporting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReportingIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReportingIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,17 +33,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="c2063367 &lt;e.kalirajan2@newcastle.ac.uk&gt;" />
       </list>
-    </option>
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -36,11 +53,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -61,9 +78,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ezhil/IdeaProjects/AuctionHouse"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ezhil\IdeaProjects\AuctionHouse\src" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.ReportingIO">
     <configuration name="AuctionHouse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AuctionHouse" />
@@ -79,6 +102,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Testing" />
+      <module name="AuctionHouse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testing" />
       <module name="AuctionHouse" />
@@ -89,6 +119,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ReportingIO" />
+        <item itemvalue="Application.Testing" />
         <item itemvalue="Application.testing" />
         <item itemvalue="Application.AuctionHouse" />
       </list>
@@ -202,11 +233,11 @@
       <updated>1677959119278</updated>
     </task>
     <task id="LOCAL-00015" summary="ReportingIO.java">
-      <created>1677959342847</created>
+      <created>1677960544433</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1677959342847</updated>
+      <updated>1677960544433</updated>
     </task>
     <option name="localTasksCounter" value="16" />
     <servers />
@@ -260,20 +291,5 @@
     <MESSAGE value="testing.java" />
     <MESSAGE value="ReportingIO.java" />
     <option name="LAST_COMMIT_MESSAGE" value="ReportingIO.java" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/testing.java</url>
-          <line>1</line>
-          <properties class="testing" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

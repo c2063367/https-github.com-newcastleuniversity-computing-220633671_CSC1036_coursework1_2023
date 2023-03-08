@@ -1,69 +1,113 @@
+import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
 
+/**
+ * Reporting class is for holding information for every auctionHouse the user inputs
+ */
 public class Reporting {
 
-    private List<AuctionHouse> auctionHouses;
+    private HashMap<String, AuctionHouse> auctionHouseNameMap;
 
-    public Reporting(List<AuctionHouse> auctionHouses) {
-        this.auctionHouses = new ArrayList<>();
-
+    public Reporting(HashMap<String, AuctionHouse> auctionHouseMap) {
+        this.auctionHouseNameMap = auctionHouseMap;
     }
 
     /**
-     * TOTO - change the method to be appropriate to reflect the actual requirement and the implementation
-     * @returnkkhjklh
+     * gets the highest priced auction house item of all the auction houses
+     *
+     * @return Item
      */
-    public Item getHighestPrice(){
+    public Item getHighestPricedItem() {
         Item largestItem = null;
-        double HighestPrice = 0.0;
-        for (AuctionHouse auctionHouse : auctionHouses) {
-            for (Item item : auctionHouse.getItemsAbovePrice(getHighestPrice().getPrice())){
-                if (item.getPrice() > HighestPrice){
-                    HighestPrice = item.getPrice();
-                    largestItem = item;
-                }
+        double highestPrice = 0.0;
+        for (Map.Entry<String, AuctionHouse> entry : auctionHouseNameMap.entrySet()) {
+            String keyAuctionHouseName = entry.getKey();
+            AuctionHouse auctionHouse = entry.getValue();
+            Item item = auctionHouse.getHighestPricedItem();
+            if (item != null && item.getPrice() > highestPrice) {
+                highestPrice = item.getPrice();
+                largestItem = item;
             }
+            System.out.println(keyAuctionHouseName + " has the highest priced item " + largestItem.getItemType() + " of the value of " + +highestPrice);
         }
         return largestItem;
     }
-public AuctionHouse getAuctionHouseWithLargestAveragePrice(int year){
-    AuctionHouse largestAuctionHouse = null;
-    double largestAveragePrice = 0.0;
-    for(AuctionHouse auctionHouse : auctionHouses) {
-        double sum = 0;
-        int count = 0;
-        for (Item item : auctionHouse.getItemsAbovePrice(year)) {
-            if (item.getYear() == year) {
-                sum += item.getPrice();
-                count++;
 
+    /**
+     * get the auction house name with largest Average price for a given year
+     *
+     * @param year - auction year
+     * @return
+     */
+
+    public AuctionHouse getAuctionHouseWithLargestAveragePrice(int year) {
+        AuctionHouse largestAuctionHouse = null;
+        double largestAveragePrice = 0.0;
+        for (Map.Entry<String, AuctionHouse> entry : auctionHouseNameMap.entrySet()) {
+            String key = entry.getKey();
+            AuctionHouse auctionHouse = entry.getValue();
+            double sum = 0;
+            int count = 0;
+            for (Item item : auctionHouse.getItemsAbovePrice(year)) {
+                if (item.getYear() == year) {
+                    sum += item.getPrice();
+                    count++;
+
+                }
+            } // for loop for all the items sold for an auction house
+            double averagePrice = count > 0 ?
+                    sum / count : 0;
+            if (averagePrice > largestAveragePrice) {
+                largestAveragePrice = averagePrice;
+                largestAuctionHouse = auctionHouse;
             }
-        } //KK-C2063367: for loop for all the items sold for an auction house
-        double averagePrice = count > 0 ?
-                sum/count : 0;
-        if (averagePrice > largestAveragePrice){
-            largestAveragePrice = averagePrice;
-            largestAuctionHouse = auctionHouse;
+        } //KK-C2063367:for loop closing the auction houses
+        if(largestAuctionHouse!=null) {
+            System.out.println(" The largest Average price is : " + largestAveragePrice);
         }
-    } //KK-C2063367:for loop closing the auction houses
-    return largestAuctionHouse;
+        return largestAuctionHouse;
     }
 
     /**
-     * TODO- change the method name to reflect the implementation
+     * get all the items of all the auction houses for a minimum price it was sold
+     *
      * @param amount
      * @return
      */
     public List<Item> getItemsWithPriceGreaterThan(double amount) {
-        List<Item> result = new ArrayList<>();
-        for (AuctionHouse auctionHouse : auctionHouses) {
+        List<Item> resultItems = new ArrayList<>();
+        for (Map.Entry<String, AuctionHouse> entry : auctionHouseNameMap.entrySet()) {
+            String key = entry.getKey();
+            AuctionHouse auctionHouse = entry.getValue();
             for (Item item : auctionHouse.getItemsAbovePrice(amount)) {
                 if (item.getPrice() > amount) {
-                    result.add(item);
+                    resultItems.add(item);
                 }
             }
         }
-        return result;
+        return resultItems;
+    }
+
+    /**
+     * Test method prints all test data
+     * prints all the items of all the auction houses
+     * test purposes only -> for the developer to see all the data entered via testing classes
+     */
+    public void printData() {
+        List<Item> resultItems = new ArrayList<>();
+        int iAuctionHouseIndex = 1;
+        for (Map.Entry<String, AuctionHouse> entry : auctionHouseNameMap.entrySet()) {
+            String auctionHouseName = entry.getKey();
+            AuctionHouse auctionHouse = entry.getValue();
+            System.out.println("Auction House Name " + iAuctionHouseIndex + ": " + auctionHouseName);
+            iAuctionHouseIndex++;
+            int iItemIndex = 1;
+            for (Item item : auctionHouse.getItems()) {
+                System.out.println("List of sold Items" + iItemIndex + ": " + item.toString());
+                iItemIndex++;
+            }
+        }
     }
 }
