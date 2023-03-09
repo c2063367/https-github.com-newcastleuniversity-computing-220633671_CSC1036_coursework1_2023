@@ -1,15 +1,12 @@
 package src;
 
-import src.AuctionHouse;
-import src.Item;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 
 /**
- * src.Reporting class is for holding information for every auctionHouse the user inputs
+ * Reporting class is for holding information for every auctionHouse the user inputs
  */
 public class Reporting {
 
@@ -22,7 +19,7 @@ public class Reporting {
     /**
      * gets the highest priced auction house item of all the auction houses
      *
-     * @return src.Item
+     * @return Item
      */
     public Item getHighestPricedItem() {
         Item largestItem = null;
@@ -95,7 +92,7 @@ public class Reporting {
     }
 
     /**
-     * Test method prints all test data
+     * Test method prints all test data, using a hashmap with a key and value, https://stackoverflow.com/questions/3973512/java-hashmap-how-to-get-a-key-and-value-by-index
      * prints all the items of all the auction houses
      * test purposes only -> for the developer to see all the data entered via testing classes
      */

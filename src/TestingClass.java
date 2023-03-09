@@ -1,19 +1,13 @@
 package src;
 
-import src.AuctionHouse;
-import src.Item;
-import src.Reporting;
-import src.ReportingIO;
-
 import java.util.HashMap;
 
 /**
  * Testing:
  *
  * This class adds some sample test data, where you can generate reports for this data
- *
- * Use src.ReportingIO class to enter your own data yourself and generate reports from your data
- * Interacting with the src.AuctionHouse Program
+ * ReportingIO class to enter your own data yourself and generate reports from your data,
+ * and interacts with the AuctionHouse Program
  */
 public class TestingClass {
     private static final HashMap<String, AuctionHouse> auctionHouseNameMap = new HashMap<>();

@@ -1,11 +1,11 @@
 package src;
 
 /**
- * src.Item - represents the src.Item class, lot number,item type,buyer name, price,the highest price and year.
+ * Item - represents the src.Item class, lot number,item type,buyer name, price,the highest price and year.
  */
 public class Item {
 
-    // the private variables store an src.Item's information
+    // the private variables store an Item's information
     private int LotNumber;
     private String ItemType;
     private String BuyerName;
@@ -65,7 +65,7 @@ public class Item {
     }
 
     /**
-     * get item type
+     * gets item type
      */
     public String getItemType(){
 
@@ -73,7 +73,7 @@ public class Item {
     }
 
     /**
-     * set item type
+     * sets item type
      */
     public void setItemType(){
         this.ItemType = ItemType;
@@ -81,17 +81,18 @@ public class Item {
     }
 
     /**
-     * get buyer name
+     * gets buyer name
      * @return
      */
     public String getBuyerName(){
+
         return BuyerName;
     }
 
     /**
-     * set buyer name
+     * sets buyer name
      */
-    public void setBuyerName(){
+    public void setBuyerName() {
         this.BuyerName = BuyerName;
 
     }
@@ -108,6 +109,7 @@ public class Item {
      * sets the price
      */
     public void setPrice(){
+
         this.Price = Price;
     }
 
@@ -148,11 +150,11 @@ public class Item {
      * @return all data string
      */
     public String toString() {
-        return "src.Item{" +
+        return "Item{" +
                 "LotNumber is:" + LotNumber + '\'' +
-                "Type of src.Item:" + ItemType + '\'' +
+                "Type of Item:" + ItemType + '\'' +
                 "Buyer Name='" + BuyerName + '\'' +
-                ", Price of src.Item ='" + Price + '\'' +
+                ", Price of Item ='" + Price + '\'' +
                 ", Year sold =" + year +
                 '}';
     }
