@@ -13,6 +13,7 @@ public class Reporting {
     private HashMap<String, AuctionHouse> auctionHouseNameMap;
 
     public Reporting(HashMap<String, AuctionHouse> auctionHouseMap) {
+
         this.auctionHouseNameMap = auctionHouseMap;
     }
 
