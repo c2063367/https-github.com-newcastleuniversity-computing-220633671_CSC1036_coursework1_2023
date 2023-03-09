@@ -1,10 +1,15 @@
+package src;
+
+import src.AuctionHouse;
+import src.Item;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 
 /**
- * Reporting class is for holding information for every auctionHouse the user inputs
+ * src.Reporting class is for holding information for every auctionHouse the user inputs
  */
 public class Reporting {
 
@@ -17,7 +22,7 @@ public class Reporting {
     /**
      * gets the highest priced auction house item of all the auction houses
      *
-     * @return Item
+     * @return src.Item
      */
     public Item getHighestPricedItem() {
         Item largestItem = null;
@@ -36,7 +41,7 @@ public class Reporting {
     }
 
     /**
-     * get the auction house name with largest Average price for a given year
+     * get the auction house name with the largest Average price for a given year
      *
      * @param year - auction year
      * @return
@@ -63,7 +68,7 @@ public class Reporting {
                 largestAveragePrice = averagePrice;
                 largestAuctionHouse = auctionHouse;
             }
-        } //KK-C2063367:for loop closing the auction houses
+        } //for loop closes the auction houses
         if(largestAuctionHouse!=null) {
             System.out.println(" The largest Average price is : " + largestAveragePrice);
         }
@@ -74,7 +79,6 @@ public class Reporting {
      * get all the items of all the auction houses for a minimum price it was sold
      *
      * @param amount
-     * @return
      */
     public List<Item> getItemsWithPriceGreaterThan(double amount) {
         List<Item> resultItems = new ArrayList<>();

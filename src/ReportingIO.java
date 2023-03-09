@@ -1,3 +1,9 @@
+package src;
+
+import src.AuctionHouse;
+import src.Item;
+import src.Reporting;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.List;
@@ -21,7 +27,7 @@ public class ReportingIO {
     private static AuctionHouse auctionHouse = null; // Initialized based on the user input
 
     /**
-     * empty constructor for test purposes
+     * empty constructor to be for a free test
      */
     public ReportingIO(HashMap<String,AuctionHouse> testAuctionHouseNameMap) {
         this.auctionHouseNameMap = testAuctionHouseNameMap;
@@ -29,7 +35,6 @@ public class ReportingIO {
 
     /**
      * Main method for java command line interface
-     * @param args
      */
     public static void main(String[] args) {
         Scanner scanUserInput = new Scanner(System.in);
@@ -66,7 +71,7 @@ public class ReportingIO {
                         break;
                     case 4:
                         runAuctionHouseProgram = false;
-                        System.out.println("Thank you for using the Auction House program, bye!");
+                        System.out.println("Thank you for using the Auction House program!");
                         System.exit(0);
                 }
             }catch (IllegalArgumentException e) {
@@ -96,8 +101,8 @@ public class ReportingIO {
             System.out.print("Item Type:");
             String itemType = scannerForItemInfo.nextLine();
             if(!Item.validItemType(itemType)) {
-                System.out.println("Valid Item types are: 'Furniture', or 'Painting' or 'Sculpture'");
-                System.out.println("Re-Enter a valid Item Type:");
+                System.out.println("Valid src.Item types are: 'Furniture', or 'Painting' or 'Sculpture'");
+                System.out.println("Re-Enter a valid src.Item Type:");
                 itemType = scannerForItemInfo.nextLine();
             }
             System.out.print("Year: ");
@@ -112,13 +117,13 @@ public class ReportingIO {
             }else{
                 auctionHouse = new AuctionHouse(itemAuctionHouseName);
             }
-            System.out.println("Item added to the auction house :" + itemAuctionHouseName);
+            System.out.println("src.Item added to the auction house :" + itemAuctionHouseName);
             if(Item.validItemType(itemType)) {
                 Item item = new Item(LotNumber, BuyerName, itemType, Price, year);
                 auctionHouse.addSoldItem(item);
                 auctionHouseNameMap.put(itemAuctionHouseName,auctionHouse);
             }else{
-                System.out.println("Auction House item data not added because the value of Item Type entered is not valid: exiting program");
+                System.out.println("Auction House item data not added because the value of src.Item Type entered is not valid: exiting program");
             }
 
         }catch (NumberFormatException eNum) {
@@ -134,8 +139,8 @@ public class ReportingIO {
      * Desc- This method prompts the user to enter information about an item for auction.
      * It takes in a scanner object and uses it to read input from the user.
      * The user is asked to enter the name of the buyer, lot number, name of the item, year, price, and auction house name.
-     * It then creates an AuctionHouse and Item object with the given information and adds the Item to the AuctionHouse.
-     * If the AuctionHouse is not found, an error message is displayed.
+     * It then creates a src.AuctionHouse and src.Item object with the given information and adds the src.Item to the src.AuctionHouse.
+     * If the src.AuctionHouse is not found, an error message is displayed.
      * If any input is invalid, a NumberFormatException/InputMismatchException is thrown and caught.
      * @return void
      * @throws NumberFormatException if any input is invalid
@@ -143,7 +148,7 @@ public class ReportingIO {
      */
     public static boolean provideReportingStatistics() {
         Scanner scanner = new Scanner(System.in);
-        // Instantiate the Reporting java class
+        // Instantiate the src.Reporting java class
         Reporting reporting = new Reporting(auctionHouseNameMap);
         boolean reportComplete = false;
         while (!reportComplete) {
@@ -163,7 +168,6 @@ public class ReportingIO {
                     } else {
                         System.out.println("The auction house " + maxAvgPriceAuctionHouse.getAuctionHouseName() + " had the largest average item price of for the year " + year + ".");
                     }
-                    break;
                 }
                 case "b" -> {
                     Item maxPriceItem = reporting.getHighestPricedItem();
@@ -173,7 +177,6 @@ public class ReportingIO {
                         System.out.println("The item with the highest price ever reported is:");
                         System.out.println(maxPriceItem.toString());
                     }
-                    break;
                 }
                 case "c" -> {
                     System.out.println("Please enter the minimum price:");
@@ -201,7 +204,7 @@ public class ReportingIO {
 }
 /** This method provides a user interface for generating report statistics for auction houses and items, the user is prompted to choose three options:
  * A: Largest average item price for a given year
- * B: Highest Price Item ever reported
+ * B: Highest Price src.Item ever reported
  * C: All items sold for the price greater than a given amount
- * Depending on the user's choice, the method calls different methods from the Reporting Class to generate the requested statistics. The Reporting Class is instantiated with the auctionHouse parameter.
+ * Depending on the user's choice, the method calls different methods from the src.Reporting Class to generate the requested statistics. The src.Reporting Class is instantiated with the auctionHouse parameter.
  */

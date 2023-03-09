@@ -1,3 +1,5 @@
+package src;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +12,7 @@ public class AuctionHouse {
     private List<Item> soldItems;
 
     /**
-     * The method is not used and instead used in Item class
+     * The method is not used and instead used in src.Item class
      * @param
      * @return
 
@@ -30,7 +32,7 @@ public class AuctionHouse {
 
     @Override
     public String toString() {
-        return "AuctionHouse {" +
+        return "src.AuctionHouse {" +
                 "name = '" + name + '\'' +
                 ", soldItems = " + soldItems +
                 '}';
@@ -134,5 +136,4 @@ public class AuctionHouse {
 
         return this.soldItems;
     }
-
 }

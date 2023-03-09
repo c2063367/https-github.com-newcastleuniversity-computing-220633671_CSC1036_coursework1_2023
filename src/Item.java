@@ -1,9 +1,11 @@
+package src;
+
 /**
- * Item - represents the Item bean , stores the type, lot number,item type,buyer name, price,highest price and year.
+ * src.Item - represents the src.Item class, lot number,item type,buyer name, price,the highest price and year.
  */
 public class Item {
 
-    // the private variables to store Item information
+    // the private variables store an src.Item's information
     private int LotNumber;
     private String ItemType;
     private String BuyerName;
@@ -12,12 +14,12 @@ public class Item {
     private int year;
 
     /**
-     * Item constructor
-     * @param LotNumber
-     * @param ItemType
-     * @param BuyerName
-     * @param Price
-     * @param year
+     * src.Item constructors
+     * @param LotNumber is the number of the auctionHouse
+     * @param ItemType type of item in auctionHouse
+     * @param BuyerName name of Buyer
+     * @param Price Price of auctionHouse
+     * @param year Year the auctionHouse was sold
      */
     public Item(int LotNumber, String ItemType, String BuyerName, double Price, int year) {
         this.LotNumber = LotNumber;
@@ -30,7 +32,7 @@ public class Item {
 
     /**
      * valid types equal to the corresponding Auction house name
-     * @param ItemType
+     * @param ItemType could be furniture, painting or a sculpture
      * @return
      */
     public static boolean validItemType(String ItemType){
@@ -47,25 +49,26 @@ public class Item {
     }
 
     /**
-     * get lot number
-     * @return
+     * gets lot number of auctionHouse
      */
     public int getLotNumber(){
+
         return LotNumber;
     }
 
     /**
-     * set lot number
+     * sets lot number
      */
     public void setLotNumber(){
+
         this.LotNumber = LotNumber;
     }
 
     /**
      * get item type
-     * @return
      */
     public String getItemType(){
+
         return ItemType;
     }
 
@@ -94,7 +97,7 @@ public class Item {
     }
 
     /**
-     * get price
+     * gets the price
      * @return
      */
     public double getPrice(){
@@ -102,32 +105,33 @@ public class Item {
     }
 
     /**
-     * set price
+     * sets the price
      */
     public void setPrice(){
         this.Price = Price;
     }
 
     /**
-     * get highest price of the item sold
+     * gets the highest price of the item sold
      * @return
      */
     public double getHighestPrice(){
+
         return HighestPrice;
     }
 
     /**
-     * set the highest price of the item sold
+     * sets the highest price of the item sold
      */
     public void setHighestPrice(){
         this.HighestPrice = HighestPrice;
     }
 
     /**
-     * get item sold year
-     * @return
+     * gets the item that was sold in the year
      */
     public int getYear(){
+
         return year;
     }
 
@@ -135,6 +139,7 @@ public class Item {
      * set item year sold
      */
     public void setYear(){
+
         this.year = year;
     }
 
@@ -143,11 +148,11 @@ public class Item {
      * @return all data string
      */
     public String toString() {
-        return "Item{" +
+        return "src.Item{" +
                 "LotNumber is:" + LotNumber + '\'' +
-                "Type of Item:" + ItemType + '\'' +
+                "Type of src.Item:" + ItemType + '\'' +
                 "Buyer Name='" + BuyerName + '\'' +
-                ", Price of Item ='" + Price + '\'' +
+                ", Price of src.Item ='" + Price + '\'' +
                 ", Year sold =" + year +
                 '}';
     }

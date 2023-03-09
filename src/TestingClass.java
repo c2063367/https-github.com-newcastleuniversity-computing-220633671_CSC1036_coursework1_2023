@@ -1,3 +1,10 @@
+package src;
+
+import src.AuctionHouse;
+import src.Item;
+import src.Reporting;
+import src.ReportingIO;
+
 import java.util.HashMap;
 
 /**
@@ -5,10 +12,10 @@ import java.util.HashMap;
  *
  * This class adds some sample test data, where you can generate reports for this data
  *
- * Use ReportingIO class to enter your own data yourself and generate reports from your data
- * Interacting with the AuctionHouse Program
+ * Use src.ReportingIO class to enter your own data yourself and generate reports from your data
+ * Interacting with the src.AuctionHouse Program
  */
-public class Testing {
+public class TestingClass {
     private static final HashMap<String, AuctionHouse> auctionHouseNameMap = new HashMap<>();
     public static void main(String[] args) {
 
