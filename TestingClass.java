@@ -5,9 +5,7 @@ import java.util.HashMap;
 /**
  * Testing:
  *
- * This class adds some sample test data, where you can generate reports for this data
- * ReportingIO class to enter your own data yourself and generate reports from your data,
- * and interacts with the AuctionHouse Program
+ * This class adds some sample test data, where you can generate reports for this data and the ReportingIO class to enter your own data yourself and generate reports from your data.
  */
 public class TestingClass {
     private static final HashMap<String, AuctionHouse> auctionHouseNameMap = new HashMap<>();
